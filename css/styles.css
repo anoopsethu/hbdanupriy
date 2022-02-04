@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+	background: url('../img/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	font-family: 'Poppins';
+}
+.logo-container{
+	text-align: center;
+	margin: 40px 0px 60px 0px;
+}
+.logo-container img{
+	height: 120px;
+	width: auto;
+}
+.puzzle-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 600px;
+	border-radius: 20px;
+	background: #fff;
+	position: relative;
+	padding: 30px;
+}
+.cta-container{
+	position: absolute;
+	bottom: -40px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	width: 335px;
+	border-radius: 1000px;
+	border: 5px solid #6C60EA;
+}
+.cta-yellow{
+	color: #222;
+	font-weight: 600;
+	font-size: 18px;
+	text-decoration: none;
+	background: #FFE043;
+	padding: 22px 40px 25px 40px;
+	text-align: center;
+	margin: 0;
+	float: left;
+	transition: all 0.1s ease-out;
+	cursor: pointer;
+}
+.cta-yellow:hover{
+	background: #FFD70F;
+}
+.cta-yellow img{
+	position: relative; 
+	top: 4px;
+	height: 22px;
+	margin-right: 4px;
+}	
+.cta-1{
+	border-radius: 1000px 0px 0px 1000px;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+.cta-2{
+	border-radius: 0px 1000px 1000px 0px;
+}
+.draggable-canvas{
+	text-align: center;
+	position: relative;
+}
+.draggable{
+	position: absolute !important;
+}

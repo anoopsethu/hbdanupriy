@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday Anupriy</title>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<div class="logo-container">
+	<img src="img/hbd-logo.png">
+</div>
+
+<div class="puzzle-container">
+
+	<div class="draggable-canvas">
+		<img class="draggable piece-4" src="img/puzzle/4.png">
+		<img class="draggable piece-14" src="img/puzzle/14.png">
+		<img class="draggable piece-12" src="img/puzzle/12.png">
+		<img class="draggable piece-1" src="img/puzzle/1.png">
+		<img class="draggable piece-13" src="img/puzzle/13.png">
+		<img class="draggable piece-9" src="img/puzzle/9.png">
+		<img class="draggable piece-8" src="img/puzzle/8.png">
+		<img class="draggable piece-7" src="img/puzzle/7.png">
+		<img class="draggable piece-2" src="img/puzzle/2.png">
+		<img class="draggable piece-3" src="img/puzzle/3.png">
+		<img class="draggable piece-5" src="img/puzzle/5.png">
+		<img class="draggable piece-6" src="img/puzzle/6.png">
+		<img class="draggable piece-15" src="img/puzzle/15.png">
+		<img class="draggable piece-10" src="img/puzzle/10.png">
+		<img class="draggable piece-11" src="img/puzzle/11.png">
+	</div>
+	
+	<div class="cta-container">
+		<a class="cta-yellow cta-1" onclick="randomizePuzzle()">
+			<img src="img/shuffle.svg">
+			Shuffle
+		</a>
+		<a class="cta-yellow cta-2" onclick="solvePuzzle()">
+			<img src="img/solve.svg">
+			Solve
+		</a>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
+<script>
+		$(function() {
+			$( ".draggable" ).draggable();
+			randomizePuzzle();
+		});
+
+		function randomizePuzzle(){
+			$('.draggable').each(function(){
+	   	    	$(this).css({"left": Math.random() * 800 , "top": Math.random() * 400}).textillate();
+			});
+		}
+
+		function solvePuzzle(){
+			$(".piece-1").css({"left": 148.016, "top": 66.875});
+			$(".piece-2").css({"left": 283.016, "top": 66.875});
+			$(".piece-3").css({"left": 418.016, "top": 66.875});
+			$(".piece-4").css({"left": 564.016, "top": 66.875});
+			$(".piece-5").css({"left": 682.016, "top": 66.875});
+			$(".piece-6").css({"left": 147.016, "top": 165.875});
+			$(".piece-7").css({"left": 279.016, "top": 194.875});
+			$(".piece-8").css({"left": 414.016, "top": 169.875});
+			$(".piece-9").css({"left": 556.016, "top": 167.875});
+			$(".piece-10").css({"left": 698.016, "top": 194.875});
+			$(".piece-11").css({"left": 148.016, "top": 311.875});
+			$(".piece-12").css({"left": 279.016, "top": 323.875});
+			$(".piece-13").css({"left": 416.016, "top": 305.875});
+			$(".piece-14").css({"left": 558.016, "top": 308.875});
+			$(".piece-15").css({"left": 673.016, "top": 304.875});
+		}
+
+</script>
+</body>
+</html>
